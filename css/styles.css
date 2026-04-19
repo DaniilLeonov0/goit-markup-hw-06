@@ -65,6 +65,7 @@ button {
 
 .address {
     font-style: normal;
+    display: none;
 }
 
 .hero {
@@ -85,7 +86,7 @@ button {
 .hero-title {
     font-size: 36px;
     font-weight: 700;
-    line-height: 1.07;
+    line-height: 1.11;
     letter-spacing: 0.02em;
     color: #ffffff;
     max-width: 216px;
@@ -213,7 +214,7 @@ button {
 .nav-list {
     display: flex;
     gap: 40px;
-    margin-left: 76px;
+    margin-left: 0;
 }
 
 .contacts {
@@ -819,6 +820,8 @@ img {
         flex-direction: row;
         flex-wrap: wrap;
         gap: 24px;
+        column-gap: 24px;
+        row-gap: 72px;
     }
 }
 
@@ -847,6 +850,14 @@ img {
         flex-direction: row;
         flex-wrap: wrap;
         gap: 24px;
+        column-gap: 24px;
+        row-gap: 64px;
+    }
+}
+
+@media (min-width: 768px) {
+    .portfolio-list {
+        row-gap: 72px;
     }
 }
 
@@ -872,13 +883,20 @@ img {
     .nav-list {
         display: flex;
         gap: 40px;
+        margin-left: 120px;
     }
-
-    .address {
-        display: block;
-    }
-
 }
+
+@media (min-width: 1158px) {
+    .nav-list {
+        margin-left: 76px;
+    }
+}
+
+.address {
+        display: none;
+    }
+
 
 @media (min-width: 768px) {
     .hero-title {
@@ -897,6 +915,12 @@ img {
 @media (min-width: 1158px) {
     .feature-item {
         width: calc((100% - 72px) / 4);
+    }
+}
+
+@media (min-width: 768px) {
+    .address {
+        display: block;
     }
 }
 
@@ -995,7 +1019,8 @@ img {
 }
 
 .mobile-contact-link {
-    font-size: 16px;
+    font-size: 24px;
+    font-weight: 500;
     color: #4d5ae5;
 }
 
@@ -1017,11 +1042,6 @@ img {
     }
 }
 
-@media (max-width: 767px) {
-    .hero-button {
-        margin-top: 24px;
-    }
-}
 
 @media (min-width: 768px) {
     .hero-button {
@@ -1058,7 +1078,7 @@ img {
 
 @media (min-width: 768px) {
     .contacts {
-        gap: 16px;
+        gap: 12px;
     }
 }
 
@@ -1072,7 +1092,7 @@ img {
 @media (min-width: 768px) {
     .feature-title {
         text-align: left;
-        font-size: 20px;
+        font-size: 36px;
         font-weight: 500;
     }
 }
@@ -1080,12 +1100,15 @@ img {
 @media (min-width: 1158px) {
     .feature-title {
         font-size: 20px;
+        font-weight: 500;
     }
 }
 
 @media (min-width: 768px) {
     .contact-link {
         font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.04em;
     }
 }
 
@@ -1189,4 +1212,10 @@ img {
     width: 24px;
     height: 24px;
     fill: #f4f4fd;
+}
+
+.feature-title {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
 }
