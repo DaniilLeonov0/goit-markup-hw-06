@@ -44,9 +44,9 @@ button {
     letter-spacing: 0.02em;
     color: #2e2f42;
     padding: 24px 0;
-    display: flex;
+    display: block;
     gap: 40px;
-    margin-left: 76px;
+    margin-left: 0;
 }
 
 .nav-link:hover,
@@ -71,7 +71,7 @@ button {
     background-color: #2E2F42;
     text-align: center;
     margin: 0 auto;
-    min-height: 432px;
+    padding: 96px 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -87,7 +87,7 @@ button {
     line-height: 1.07;
     letter-spacing: 0.02em;
     color: #ffffff;
-    max-width: 216px;
+    max-width: 496px;
     margin: 0 auto;
 }
 
@@ -98,7 +98,7 @@ button {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    margin-top: 48px;
+    margin-top: 24px;
     padding: 16px 32px;
     border: none;
     border-radius: 4px;
@@ -107,7 +107,7 @@ button {
 }
 
 .section {
-    padding: 120px 0;
+    padding: 72px 0;
 }
 
 .feature-title {
@@ -212,6 +212,7 @@ button {
 .nav-list {
     display: flex;
     gap: 40px;
+    margin-left: 76px;
 }
 
 .contacts {
@@ -487,7 +488,8 @@ p {
     padding: 72px 24px 24px 24px;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
     width: calc(100% - 32px);
-    max-width: 408px;
+    max-width: 392px;
+    padding: 72px 16px 24px;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -980,7 +982,7 @@ img {
     margin-top: auto;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 24px;
 }
 
 .mobile-contact-link {
@@ -997,7 +999,7 @@ img {
 .mobile-socials {
     display: flex;
     gap: 40px;
-    margin-top: 24px;
+    margin-top: 48px;
 }
 
 @media (min-width: 768px) {
@@ -1020,6 +1022,12 @@ img {
 
 .contact-link {
     white-space: nowrap;
+}
+
+@media (min-width: 768px) {
+    .contacts {
+        gap: 16px;
+    }
 }
 
 @media (min-width: 1158px) {
@@ -1075,4 +1083,69 @@ img {
         flex-direction: column;
         align-items: center;
     }
+}
+
+@media (min-width: 768px) {
+    .hero {
+        padding: 112px 0;
+    }
+}
+
+@media (min-width: 1158px) {
+    .hero {
+        padding: 188px 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .section {
+        padding: 96px 0;
+    }
+}
+
+
+@media (min-width: 1158px) {
+    .section {
+        padding: 120px 0;
+    }
+}
+
+@media (min-width: 1158px) {
+    .feature-icon {
+        display: flex;
+    }
+}
+
+@media (min-width: 768px) {
+    .subscribe-form {
+        flex-direction: row;
+        gap: 24px;
+    }
+
+    .subscribe-input {
+        width: 264px;
+    }
+}
+
+@media (min-width: 768px) {
+    .modal {
+        max-width: 408px;
+        padding: 72px 24px 24px;
+    }
+}
+
+.mobile-socials .social-link {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #4d5ae5;
+}
+
+.mobile-socials .social-link svg {
+    width: 24px;
+    height: 24px;
+    fill: #f4f4fd;
 }
