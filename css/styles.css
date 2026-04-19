@@ -45,8 +45,8 @@ button {
     color: #2e2f42;
     padding: 24px 0;
     display: block;
-    gap: 40px;
     margin-left: 0;
+    padding: 24px 0;
 }
 
 .nav-link:hover,
@@ -81,6 +81,8 @@ button {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .hero-title {
@@ -100,7 +102,6 @@ button {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    margin-top: 72px;
     padding: 16px 32px;
     border: none;
     border-radius: 4px;
@@ -114,7 +115,7 @@ button {
 
  .feature-title {
      font-weight: 700;
-     font-size: 20px;
+     font-size: 16px;
      line-height: 1.2;
      letter-spacing: 0.02em;
      color: #2e2f42;
@@ -123,6 +124,7 @@ button {
  }
 
 .feature-text {
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -141,6 +143,7 @@ button {
 }
 
 .team-item {
+    width: 264px;
     background-color: #ffffff;
     border-radius: 0 0 4px 4px;
     overflow: hidden;
@@ -389,7 +392,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    text-align: left;
     gap: 72px;
 }
 
@@ -397,6 +400,7 @@ p {
     max-width: 264px;
     color: #ffffff;
     margin-top: 0px;
+    text-align: left;
 }
 
 .footer-social-title {
@@ -831,9 +835,16 @@ img {
     .team-list {
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: center;
         gap: 24px;
         column-gap: 24px;
         row-gap: 64px;
+    }
+}
+
+@media (min-width: 1158px) {
+    .team-list {
+        justify-content: center;
     }
 }
 
@@ -863,14 +874,6 @@ img {
 @media (min-width: 768px) {
     .nav-list {
         display: flex;
-        gap: 40px;
-        margin-left: 120px;
-    }
-}
-
-@media (min-width: 1158px) {
-    .nav-list {
-        margin-left: 76px;
     }
 }
 
@@ -998,14 +1001,14 @@ img {
 }
 
 .mobile-contact-link {
-    font-size: 24px;
-    font-weight: 500;
+    font-size: 16px;
+    font-weight: 400;
     color: #4d5ae5;
 }
 
 .mobile-contact-link.phone {
-    font-size: 24px;
-    font-weight: 500;
+    font-size: 16px;
+    font-weight: 400;
     color: #4d5ae5;
 }
 
@@ -1022,17 +1025,6 @@ img {
 }
 
 
-@media (min-width: 768px) {
-    .hero-button {
-        margin-top: 36px;
-    }
-}
-
-@media (min-width: 1158px) {
-    .hero-button {
-        margin-top: 48px;
-    }
-}
 
 @media (min-width: 1158px) {
     .footer {
@@ -1048,6 +1040,12 @@ img {
         justify-content: center;
         align-items: flex-start;
         gap: 72px 24px;
+    }
+}
+
+@media (min-width: 1158px) {
+    .footer-container {
+        max-width: 1158px;
     }
 }
 
@@ -1071,8 +1069,8 @@ img {
 @media (min-width: 768px) {
     .feature-title {
         text-align: left;
-        font-size: 36px;
-        font-weight: 700;
+        font-size: 20px;
+        font-weight: 500;
     }
 }
 
@@ -1211,3 +1209,4 @@ img {
     align-items: center;
     gap: 48px;
 }
+
