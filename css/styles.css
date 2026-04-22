@@ -35,7 +35,7 @@ img {
     height: auto;
 }
 
-/* ===================== CONTAINER ===================== */
+
 .container {
     width: 100%;
     max-width: 320px;
@@ -57,7 +57,7 @@ img {
     }
 }
 
-/* ===================== VISUALLY HIDDEN ===================== */
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -71,7 +71,7 @@ img {
     overflow: hidden;
 }
 
-/* ===================== LOGO ===================== */
+
 .logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -87,7 +87,7 @@ img {
     color: #4D5AE5;
 }
 
-/* ===================== HEADER ===================== */
+
 .page-header {
     border-bottom: 1px solid #e7e9fc;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -99,7 +99,7 @@ img {
     justify-content: space-between;
 }
 
-/* Mobile: logo + burger, nav-list and address hidden */
+
 .nav {
     display: flex;
     align-items: center;
@@ -142,7 +142,7 @@ img {
     color: #404bbf;
 }
 
-/* Address — hidden on mobile */
+
 .address {
     font-style: normal;
     display: none;
@@ -154,7 +154,7 @@ img {
     }
 }
 
-/* Contacts list inside address */
+
 .contacts {
     display: flex;
     flex-direction: column;
@@ -168,7 +168,7 @@ img {
     }
 }
 
-/* D5: different typography on tablet vs desktop */
+
 .contact-link {
     font-style: normal;
     color: #434455;
@@ -181,7 +181,7 @@ img {
     color: #404bbf;
 }
 
-/* Tablet contact typography */
+
 @media (min-width: 768px) and (max-width: 1157px) {
     .contact-link {
         font-size: 12px;
@@ -190,7 +190,7 @@ img {
     }
 }
 
-/* Desktop contact typography */
+
 @media (min-width: 1158px) {
     .contact-link {
         font-size: 16px;
@@ -199,7 +199,7 @@ img {
     }
 }
 
-/* Burger button */
+
 .menu-open-btn {
     background: none;
     border: none;
@@ -216,8 +216,7 @@ img {
     }
 }
 
-/* ===================== HERO ===================== */
-/* D3: separate background images per breakpoint with max-width */
+
 .hero {
     background-color: #2E2F42;
     text-align: center;
@@ -276,7 +275,7 @@ img {
     }
 }
 
-/* Hero title */
+
 .hero-title {
     font-size: 36px;
     font-weight: 700;
@@ -285,7 +284,6 @@ img {
     color: #ffffff;
     max-width: 216px;
     margin: 0 auto;
-    /* Mobile: 72px gap between title and button */
     margin-bottom: 72px;
 }
 
@@ -294,14 +292,12 @@ img {
         font-size: 56px;
         line-height: 1.07;
         max-width: 496px;
-        /* Tablet: 36px gap */
         margin-bottom: 36px;
     }
 }
 
 @media (min-width: 1158px) {
     .hero-title {
-        /* Desktop: 48px gap */
         margin-bottom: 48px;
     }
 }
@@ -326,7 +322,7 @@ img {
     background-color: #404bbf;
 }
 
-/* ===================== SECTIONS ===================== */
+
 .section {
     padding: 96px 0;
 }
@@ -347,8 +343,7 @@ img {
     margin-bottom: 72px;
 }
 
-/* ===================== FEATURES ===================== */
-/* D6: different alignment and typography per breakpoint */
+
 
 .features-list {
     display: flex;
@@ -381,7 +376,7 @@ img {
     }
 }
 
-/* Feature icon box — hidden on mobile & tablet */
+
 .feature-icon {
     width: 100%;
     height: 112px;
@@ -400,7 +395,7 @@ img {
     }
 }
 
-/* Mobile: large bold centered heading */
+
 .feature-title {
     font-weight: 700;
     font-size: 36px;
@@ -411,14 +406,14 @@ img {
     text-align: center;
 }
 
-/* Tablet: keep mobile font size/weight, only change alignment */
+
 @media (min-width: 768px) {
     .feature-title {
         text-align: left;
     }
 }
 
-/* Desktop: switch to smaller medium weight */
+
 @media (min-width: 1158px) {
     .feature-title {
         font-weight: 500;
@@ -432,30 +427,29 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-    /* Mobile: medium weight */
     font-weight: 500;
 }
 
-/* Tablet: keep medium weight */
+
 @media (min-width: 768px) {
     .feature-text {
         font-weight: 500;
     }
 }
 
-/* Desktop: regular weight */
+
 @media (min-width: 1158px) {
     .feature-text {
         font-weight: 400;
     }
 }
 
-/* ===================== TEAM ===================== */
+
 .team-section {
     background-color: #f4f4fd;
 }
 
-/* D4: custom container width for Team section on tablet */
+
 .team-section .container {
     max-width: 584px;
 }
@@ -470,7 +464,6 @@ img {
     display: flex;
     flex-direction: column;
     gap: 72px;
-    /* Mobile & tablet: center cards horizontally */
     align-items: center;
 }
 
@@ -489,7 +482,6 @@ img {
     border-radius: 0 0 4px 4px;
     overflow: hidden;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    /* Fixed card width */
     width: 264px;
 }
 
@@ -541,7 +533,7 @@ img {
     margin-top: 8px;
 }
 
-/* ===================== SOCIAL LINKS ===================== */
+
 .social-link {
     width: 40px;
     height: 40px;
@@ -563,7 +555,7 @@ img {
     fill: #f4f4fd;
 }
 
-/* ===================== PORTFOLIO ===================== */
+
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
@@ -656,7 +648,7 @@ img {
     color: #434455;
 }
 
-/* ===================== FOOTER ===================== */
+
 .footer {
     background-color: #2E2F42;
     padding: 96px 0;
@@ -668,7 +660,7 @@ img {
     }
 }
 
-/* D4: custom container for footer on tablet */
+
 .footer-container {
     display: flex;
     flex-direction: column;
@@ -778,11 +770,10 @@ img {
     background-color: #31d0aa;
 }
 
-/* Footer subscribe */
+
 .footer-subscribe {
     display: flex;
     flex-direction: column;
-    /* Mobile: center everything including title */
     align-items: center;
     width: 100%;
 }
@@ -807,7 +798,6 @@ img {
     letter-spacing: 0.02em;
     color: #ffffff;
     margin-bottom: 16px;
-    /* Mobile: centered */
     text-align: center;
 }
 
@@ -882,7 +872,7 @@ img {
     background-color: #31d0aa;
 }
 
-/* ===================== MODAL ===================== */
+
 .modal-overlay {
     background-color: rgba(46, 47, 66, 0.4);
     position: fixed;
@@ -1130,8 +1120,7 @@ textarea::placeholder {
     outline: none;
 }
 
-/* ===================== MOBILE MENU ===================== */
-/* C1, C3, C4, C7: full-viewport overlay, hidden by default, only on mobile */
+
 .mobile-menu {
     position: fixed;
     inset: 0;
@@ -1144,14 +1133,14 @@ textarea::placeholder {
         visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* C5: show when is-open added */
+
 .mobile-menu.is-open {
     opacity: 1;
     pointer-events: auto;
     visibility: visible;
 }
 
-/* C7: hidden on tablet and desktop */
+
 @media (min-width: 768px) {
     .mobile-menu {
         display: none;
@@ -1192,7 +1181,7 @@ textarea::placeholder {
     fill: #ffffff;
 }
 
-/* C6: nav at top, contacts+socials at bottom */
+
 .mobile-nav-list {
     display: flex;
     flex-direction: column;
@@ -1208,7 +1197,7 @@ textarea::placeholder {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* C8: static blue accent, always shown */
+
 .mobile-nav-link.current,
 .mobile-nav-link:hover,
 .mobile-nav-link:focus {
@@ -1223,8 +1212,7 @@ textarea::placeholder {
     margin-bottom: 48px;
 }
 
-/* C8: phone visually prominent, email smaller */
-/* Mobile menu contact typography fix */
+
 .mobile-contact-link {
     font-style: normal;
     font-size: 20px;
