@@ -427,13 +427,9 @@ img {
     background-color: #f4f4fd;
 }
 
-.team-section .container {
-    max-width: 584px;
-}
-
-@media (min-width: 1158px) {
+@media (min-width: 768px) and (max-width: 1157px) {
     .team-section .container {
-        max-width: 1158px;
+        max-width: 584px;
     }
 }
 
@@ -651,19 +647,17 @@ img {
         flex-wrap: wrap;
         align-items: flex-start;
         gap: 72px 24px;
-        max-width: 584px;
+        max-width: 552px;
         margin: 0 auto;
-        padding: 0 16px;
     }
 }
 
 @media (min-width: 1158px) {
     .footer-container {
         flex-wrap: nowrap;
-        max-width: 1158px;
+        max-width: 100%;
         gap: 0;
         align-items: baseline;
-        padding: 0 15px;
     }
 }
 
@@ -1192,9 +1186,10 @@ textarea::placeholder {
 }
 
 .mobile-contact-link.phone {
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.11;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
     color: #4d5ae5;
 }
 
