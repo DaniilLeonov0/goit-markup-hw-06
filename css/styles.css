@@ -35,7 +35,6 @@ img {
     height: auto;
 }
 
-
 .container {
     width: 100%;
     max-width: 320px;
@@ -57,7 +56,6 @@ img {
     }
 }
 
-
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -70,7 +68,6 @@ img {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-
 
 .logo {
     font-family: "Raleway", sans-serif;
@@ -87,7 +84,6 @@ img {
     color: #4D5AE5;
 }
 
-
 .page-header {
     border-bottom: 1px solid #e7e9fc;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -98,7 +94,6 @@ img {
     align-items: center;
     justify-content: space-between;
 }
-
 
 .nav {
     display: flex;
@@ -142,7 +137,6 @@ img {
     color: #404bbf;
 }
 
-
 .address {
     font-style: normal;
     display: none;
@@ -153,7 +147,6 @@ img {
         display: block;
     }
 }
-
 
 .contacts {
     display: flex;
@@ -168,7 +161,6 @@ img {
     }
 }
 
-
 .contact-link {
     font-style: normal;
     color: #434455;
@@ -181,7 +173,6 @@ img {
     color: #404bbf;
 }
 
-
 @media (min-width: 768px) and (max-width: 1157px) {
     .contact-link {
         font-size: 12px;
@@ -190,7 +181,6 @@ img {
     }
 }
 
-
 @media (min-width: 1158px) {
     .contact-link {
         font-size: 16px;
@@ -198,7 +188,6 @@ img {
         letter-spacing: 0.02em;
     }
 }
-
 
 .menu-open-btn {
     background: none;
@@ -215,7 +204,6 @@ img {
         display: none;
     }
 }
-
 
 .hero {
     background-color: #2E2F42;
@@ -275,7 +263,6 @@ img {
     }
 }
 
-
 .hero-title {
     font-size: 36px;
     font-weight: 700;
@@ -322,7 +309,6 @@ img {
     background-color: #404bbf;
 }
 
-
 .section {
     padding: 96px 0;
 }
@@ -342,7 +328,6 @@ img {
     text-transform: capitalize;
     margin-bottom: 72px;
 }
-
 
 
 .features-list {
@@ -376,7 +361,6 @@ img {
     }
 }
 
-
 .feature-icon {
     width: 100%;
     height: 112px;
@@ -395,7 +379,6 @@ img {
     }
 }
 
-
 .feature-title {
     font-weight: 700;
     font-size: 36px;
@@ -406,13 +389,11 @@ img {
     text-align: center;
 }
 
-
 @media (min-width: 768px) {
     .feature-title {
         text-align: left;
     }
 }
-
 
 @media (min-width: 1158px) {
     .feature-title {
@@ -430,13 +411,11 @@ img {
     font-weight: 500;
 }
 
-
 @media (min-width: 768px) {
     .feature-text {
         font-weight: 500;
     }
 }
-
 
 @media (min-width: 1158px) {
     .feature-text {
@@ -444,11 +423,9 @@ img {
     }
 }
 
-
 .team-section {
     background-color: #f4f4fd;
 }
-
 
 .team-section .container {
     max-width: 584px;
@@ -533,7 +510,6 @@ img {
     margin-top: 8px;
 }
 
-
 .social-link {
     width: 40px;
     height: 40px;
@@ -554,7 +530,6 @@ img {
 .social-link svg {
     fill: #f4f4fd;
 }
-
 
 .portfolio-list {
     display: flex;
@@ -587,6 +562,10 @@ img {
     .portfolio-item {
         width: calc((100% - 48px) / 3);
         box-shadow: none;
+    }
+
+    .portfolio-list {
+        row-gap: 48px;
     }
 }
 
@@ -648,7 +627,6 @@ img {
     color: #434455;
 }
 
-
 .footer {
     background-color: #2E2F42;
     padding: 96px 0;
@@ -659,7 +637,6 @@ img {
         padding: 100px 0;
     }
 }
-
 
 .footer-container {
     display: flex;
@@ -674,7 +651,6 @@ img {
         flex-wrap: wrap;
         align-items: flex-start;
         gap: 72px 24px;
-        /* tablet: 584px wide container */
         max-width: 584px;
         margin: 0 auto;
         padding: 0 16px;
@@ -769,7 +745,6 @@ img {
 .footer-social-list .social-link:focus {
     background-color: #31d0aa;
 }
-
 
 .footer-subscribe {
     display: flex;
@@ -871,7 +846,6 @@ img {
 .subscribe-btn:focus {
     background-color: #31d0aa;
 }
-
 
 .modal-overlay {
     background-color: rgba(46, 47, 66, 0.4);
@@ -1120,7 +1094,6 @@ textarea::placeholder {
     outline: none;
 }
 
-
 .mobile-menu {
     position: fixed;
     inset: 0;
@@ -1133,13 +1106,11 @@ textarea::placeholder {
         visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
 .mobile-menu.is-open {
     opacity: 1;
     pointer-events: auto;
     visibility: visible;
 }
-
 
 @media (min-width: 768px) {
     .mobile-menu {
@@ -1181,7 +1152,6 @@ textarea::placeholder {
     fill: #ffffff;
 }
 
-
 .mobile-nav-list {
     display: flex;
     flex-direction: column;
@@ -1197,7 +1167,6 @@ textarea::placeholder {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
 .mobile-nav-link.current,
 .mobile-nav-link:hover,
 .mobile-nav-link:focus {
@@ -1211,7 +1180,6 @@ textarea::placeholder {
     gap: 24px;
     margin-bottom: 48px;
 }
-
 
 .mobile-contact-link {
     font-style: normal;
